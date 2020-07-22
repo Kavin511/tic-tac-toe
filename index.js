@@ -44,12 +44,10 @@ for(let i=0;i<squares.length;i++)
                                         if(squares[win[i][j]].innerHTML!=="X"&&squares[win[i][j]].innerHTML!=="O")
                                         {
                                             setTimeout(() => {
-                                                // console.log("Naane varuvan");
                                                 squares[win[i][j]].innerHTML="O"
                                                 checkWindCondition() 
                                             }, 100);
                                             
-                                            // console.log("It is logged in attack mode  and move made in "+ win[i][j])
                                             winMove=true
                                                
                                             break
@@ -87,12 +85,10 @@ for(let i=0;i<squares.length;i++)
                                             if(squares[win[i][j]].innerHTML!=="X"&&squares[win[i][j]].innerHTML!=="O")
                                             {
                                                 setTimeout(() => {
-                                                    // console.log("Naane varuvan");
                                                     squares[win[i][j]].innerHTML="O"
                                                     checkWindCondition()  
                                                 }, 100);
                                                 
-                                                console.log("It is logged in attack mode  and move made in "+ win[i][j])
                                                 winMove=true
                                                   
                                                 break
@@ -115,12 +111,10 @@ for(let i=0;i<squares.length;i++)
                                 if(squares[i].innerHTML!=='X'&&squares[i].innerHTML!=='O')
                                 {
                                     setTimeout(() => {
-                                        // console.log("Naane varuvan");
                                         squares[i].innerHTML='O'
                                         checkWindCondition()
                                     }, 100);
                                     
-                                    console.log("It is logged in defender mode  and move made in "+ i)
                                     
                                     winMove=true
                                     break;
