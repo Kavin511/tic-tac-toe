@@ -111,10 +111,12 @@ for(let i=0;i<squares.length;i++)
                                 if(squares[i].innerHTML!=='X'&&squares[i].innerHTML!=='O')
                                 {
                                     setTimeout(() => {
+
                                         squares[i].innerHTML='O'
                                         checkWindCondition()
                                     }, 100);
                                     
+
                                     
                                     winMove=true
                                     break;
